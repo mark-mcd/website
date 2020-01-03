@@ -1,22 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hi there. This is Mark's page.</title>
-	<link rel="stylesheet" href="main.css">
-	
-</head>
-<body>
-	
-	<div class="sidenav">
-	  <a href="about.html">About</a>
-	  <a href="stripe.html">Stripe</a>
-	  <a href="contact.html">Contact</a>
-	</div>
-	
-	<div class="main">
-            <p>Error creating charge. Response: <%= @error.message %> </p>
-            </br>
-			<a href="stripe.html">Try again</a>
-		</div>
-
-</html>
+<p>Error creating charge. Response: <%= @error.message %> </p></br>
+<a href="stripe.html">Try again</a>

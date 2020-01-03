@@ -6,15 +6,19 @@ set :public_folder, File.dirname(__FILE__)
 Stripe.api_key = 'sk_test_DuAv1GHHwvjmKACrSjToCM1y'
 
 get '/' do
-    send_file 'index.html'
+    erb :index
+end
+
+get '/about' do
+    erb :about
 end
 
 get '/stripe' do
-    send_file 'stripe.html'
+    erb :stripe
 end
 
 get '/contact' do
-    send_file 'contact.html'
+    erb :contact
 end
 
 post '/charge' do

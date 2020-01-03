@@ -1,12 +1,3 @@
-var quote = document.querySelector(".js-quote");
-
-quote.innerHTML = "loaded";
-
-console.log(quote);
-quote.addEventListener('click',function(e){
-    quote.innerHTML = "clicked";
-});
-
 var stripe = Stripe('pk_test_jqMWtneTfdA97Dh5ZxV1qf6J');
 
 // Create an instance of Elements.
