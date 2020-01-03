@@ -3,8 +3,7 @@ require 'sinatra'
 set :public_folder, File.dirname(__FILE__)
 
 
-Stripe.api_key = STRIPE_SK_TEST
-# 'sk_test_DuAv1GHHwvjmKACrSjToCM1y'
+Stripe.api_key = 'sk_test_DuAv1GHHwvjmKACrSjToCM1y'
 
 get '/' do
     send_file 'index.html'

@@ -7,8 +7,7 @@ quote.addEventListener('click',function(e){
     quote.innerHTML = "clicked";
 });
 
-var stripe = Stripe(STRIPE_PK_TEST);
-// 'pk_test_jqMWtneTfdA97Dh5ZxV1qf6J'
+var stripe = Stripe('pk_test_jqMWtneTfdA97Dh5ZxV1qf6J');
 
 // Create an instance of Elements.
 var elements = stripe.elements();
